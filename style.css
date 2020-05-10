@@ -1,0 +1,435 @@
+/* --------------------------------global styles-------------------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    min-width: 320px;
+}
+/* --------------------------------global styles ends-------------------------------- */
+
+/* --------------------------------Top section -------------------------------- */
+.top-section{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    background-color: #749DFA;
+    padding: 2vh 3vh;
+    border-radius: 0 0 15px 15px;
+}
+.top-section .icon-line{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.top-section .icon-line .burger{
+    width: 30px;
+    height: 50px;
+}
+.top-section .icon-line .burger div{
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.top-section .icon-line .burger div:nth-child(1){
+    width: 60%;
+}
+.top-section .icon-line .burger div:nth-child(3){
+    width: 60%;
+    transform: translate(12px)
+}
+
+.top-section .nav-links ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-family: 'Jost';
+}
+.top-section .nav-links ul li{
+    background-color: #5E83E1;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.top-section .icon-line .bell{
+    color: white;
+    position: relative;
+}
+
+.top-section .icon-line .bell .bell-dot{
+    display: inline-block;
+    position: absolute;
+    height: 10px;
+    width : 10px;
+    background-color: orange;
+    border-radius: 50%;
+    top: 5px;
+    right:1px;
+}
+
+.top-section .nav-links ul li span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: orange;    
+    border-radius: 50%;
+}
+.top-section .title-message{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+}
+
+.top-section .title-message br{
+    display: none;
+}
+.top-section .searchbar{
+    position: relative;
+    margin-top: 10px;
+    align-self:center ;
+    width: 43vw;
+}
+.top-section .searchbar .location{
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    z-index: 1;
+}
+.top-section .searchbar input{
+    font-size: 30px;
+    padding: 10px 50px;
+    border: transparent;
+    background:#ADCCFC;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.top-section .searchbar i{
+    color: white;
+}
+
+/* --------------------------------Top section ends-------------------------------- */
+
+/* --------------------------------Mid section -------------------------------- */
+.mid-text-region{
+    display: flex;
+    font-family: 'Jost';
+    padding: 3vh 5vh;
+    justify-content: space-between;
+}
+.mid-text-region .left p:nth-child(1){
+    color: black;
+    font-size: 20px;
+}
+.mid-text-region .left p:nth-child(2){
+    color: grey;
+}
+.mid-text-region .right{
+    color: grey
+}
+/* --------------------------------Mid Section ends-------------------------------- */
+
+/* --------------------------------Card styles-------------------------------- */
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0vh 8vh;
+    font-family: 'Jost';
+}
+.single-card{
+    border: 2px solid white;
+    width: 280px;
+    margin: 0 15px;
+}
+.single-card:hover{
+    border:2px solid #C7CACB;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #C7CACB;
+}
+.card-container .single-card .card-top .card-right .stars{
+    font-size: 12px;
+    color: gold;
+    margin-top: 5px;
+}
+.card-container .single-card .card-top .card-right .card-title{
+    /* display: flex; */
+    width: 100% ;
+    text-align: right;
+}
+.card-container .single-card .card-top .card-right .card-title p{
+    padding-right: 30px;
+}
+.card-container .single-card .card-top .card-right .card-title .tick{
+    color: blue;
+}
+.card-container .single-card .card-top .card-right .card-title .bookmark{
+    color: grey;
+    padding-right: 2px;
+    /* justify-self: flex-end; */
+}
+.card-container .single-card .card-top .card-right p:nth-child(1){
+    display: inline;
+}
+.card-container .single-card .card-top .card-right .starts{
+    margin-top: 8px;
+    font-size: 10px;
+    color: grey;
+}
+.card-container .single-card .card-top .card-right .price{
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+}
+.card-container .single-card .card-top .card-right .price span{
+    font-size: 13px;
+    color: grey;
+}
+.card-container .single-card .card-top .card-right{
+    margin-left: 10px;
+    margin-top: 1px;
+}
+.card-container .single-card .card-top{
+    display: flex;
+}
+.card-container .single-card .card-top .card-left img{
+    width:90px;
+    height: 90px; 
+    border-radius: 4px;
+}
+
+.card-container .single-card .card-bottom{
+    display: flex;
+    font-size: 12px;
+    padding-left: 5px;
+    margin-top: 5px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    color: grey
+}
+.card-container .single-card .card-bottom p{
+    padding: 0 2px ;
+}
+.card-container .single-card .card-bottom p span{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: grey;
+    border-radius: 50%;
+    transform:translateY(-1px);
+}
+
+/* --------------------------------Card styles ends-------------------------------- */
+
+/* ----------------------------bottom toolbar------------------------------------- */
+.footer-cn{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    clear: top;
+}
+footer i:nth-child(1){
+    color: blue;
+    border: blue;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+/* --------------------------------bottom toolbar ends-------------------------------- */
+
+
+
+/* ---------------------MEDIA QUERIES FOR RESPONSIVENES------------------------- */
+@media screen and (max-width: 320px){
+    .top-section .icon-line .bell{
+        font-size: 13px;
+    }
+    .top-section .icon-line{
+        margin-bottom: 10px;
+        padding-left: 1vh;
+    }
+    .top-section .nav-links ul{
+        justify-content: space-around;
+    }
+    .top-section .nav-links ul li:nth-child(1){
+        transform: translateX(-35px);
+    }
+    .top-section .nav-links ul li:nth-child(2){
+        transform: translateX(-25px);
+    }
+    .top-section .nav-links ul li:nth-child(3){
+        transform: translateX(-15px);
+    }
+    .top-section .nav-links ul li{
+        background-color: #5E83E1;
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+    .top-section .nav-links ul li span{
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background-color: orange;    
+        border-radius: 50%;
+    }    
+    .single-card:hover{
+    border:2px solid #C7CACB;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #C7CACB;
+}
+    .top-section .title-message{
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+     .top-section div span:nth-child(1){
+        display: block;
+        text-align: left;
+    }
+    .top-section .title-message p{
+        text-align: left;
+        padding-left: 2vh;
+    }
+    .top-section .title-message br{
+        display: initial;
+        text-align: start;
+    }
+    .top-section .searchbar{
+        position: relative;
+        margin-top: 5px;
+        align-self:center ;
+        width: 85vw;
+    }
+    .top-section .icon-line .burger{
+        width: 25px;
+        height: 30px;
+    }
+    .top-section .searchbar input{
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .top-section .searchbar i{
+    font-size: 1em;        
+    }
+    .top-section .searchbar .location{
+        top: 13px;
+        left: 20px;
+    }
+    .mid-text-region .left p:nth-child(1){
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .mid-text-region .left p:nth-child(2){
+        font-size: 12px;
+    }
+    .mid-text-region .right{
+        font-size: 15px;
+    }
+    .mid-text-region{
+        padding: 3vh 3vh 0vh 3vh;
+    }
+    .card-container{
+        padding: 3vh 3vh;
+    }
+    .single-card{
+        margin: 10px 0;
+    }
+    .single-card:nth-child(1){
+        margin-top: 0;
+    }
+    .top-section{
+        padding: 2vh 3vh;
+    }
+    footer{
+        color: grey;
+        font-size: 20px;
+    }
+    
+    footer img{
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 740px) and (min-width: 321px) {
+    .top-section .title-message{ 
+        font-size: 25px;
+    }
+    .single-card:hover{
+        border:2px solid #C7CACB;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px #C7CACB;
+    }
+    .card-container{
+        padding: 3vh 3vh;
+    }
+    .single-card{
+        margin: 10px 0;
+    }
+    .single-card:nth-child(1){
+        margin-top: 0;
+    }
+    .top-section .searchbar input{
+        font-size: 15px;
+        padding: 10px 50px;
+        cursor: pointer;
+    }
+    .top-section .searchbar i{
+        font-size: 0.7em;        
+    }
+    .top-section .searchbar{
+        width: 80vw;
+    }
+    .mid-text-region .left p:nth-child(1){
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .mid-text-region .left p:nth-child(2){
+        font-size: 12px;
+    }
+    .mid-text-region .right{
+        font-size: 15px;
+    }
+    .mid-text-region{
+        padding: 3vh 3vh;
+    }
+   
+}
+
+@media screen and (max-width: 392px) and (min-width: 321px) {
+    .top-section .nav-links ul li{
+        
+        font-size: 11px;
+    }
+    .single-card:hover{
+        border:2px solid #C7CACB;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px #C7CACB;
+    }
+   
+}
+
